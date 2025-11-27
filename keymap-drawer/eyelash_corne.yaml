@@ -67,7 +67,7 @@ layers:
   - $$mdi:volume-off$$
   - PRINTSCREEN
   - {t: '$$mdi:transfer$$', type: trans}
-  - PG DN
+  - PG UP
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
