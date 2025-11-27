@@ -33,7 +33,7 @@
         esc_tab: esc_tab {
             compatible = "zmk,behavior-mod-morph";
             label = "ESC_TAB";
-            bindings = <&kp ESCAPE>, <&kp TAB>;
+            bindings = <&kp ESCAPE>, <&kp RS(TAB)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LALT|MOD_RALT)>;
