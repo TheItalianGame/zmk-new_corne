@@ -15,7 +15,7 @@ layers:
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:keyboard-esc$$', s: '$$mdi:keyboard-tab$$'}
-  - A
+  - {t: A, s: '$$mdi:keyboard-tab$$'}
   - S
   - D
   - F
