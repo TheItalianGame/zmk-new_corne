@@ -30,13 +30,6 @@
 
 / {
     behaviors {
-        td0: td0 {
-            compatible = "zmk,behavior-tap-dance";
-            display-name = "Shift/Caps Lock Tap Dance";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
-        };
-
         esc_tab: esc_tab {
             compatible = "zmk,behavior-mod-morph";
             label = "ESC_TAB";
@@ -150,7 +143,7 @@
             display-name = "FN";
             bindings = <
 &studio_unlock  &bt BT_CLR_ALL  &bt BT_SEL 0     &bt BT_SEL 1    &bt BT_SEL 2     &bt BT_SEL 3                                        &mmv MOVE_UP                     &kp F7  &kp F8  &kp F9  &kp F10  &bt BT_CLR       &kp F11
-&td0            &out OUT_USB    &out OUT_BLE     &mkp RCLK       &mkp MB4         &mkp MB5                            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp F4  &kp F5  &kp F6  &kp F11  &kp PRINTSCREEN  &kp SCROLLLOCK
+&none           &out OUT_USB    &out OUT_BLE     &mkp RCLK       &mkp MB4         &mkp MB5                            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp F4  &kp F5  &kp F6  &kp F11  &kp PRINTSCREEN  &kp SCROLLLOCK
 &sys_reset      &bootloader     &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI                    &mmv MOVE_DOWN                   &kp F1  &kp F2  &kp F3  &kp F12  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD
                                                  &trans          &trans           &trans                                                                               &trans  &trans  &trans
             >;
