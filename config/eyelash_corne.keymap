@@ -37,6 +37,7 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LALT|MOD_RALT)>;
+            keep-mods = <(MOD_LALT|MOD_RALT)>;
         };
 
         tabesc: tabesc {
