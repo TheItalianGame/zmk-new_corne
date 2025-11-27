@@ -210,7 +210,7 @@ layers:
   - F10
   - $$mdi:bluetooth-off$$
   - F11
-  - '&td0'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - OUT USB
   - OUT BLE
   - $$mdi:mouse-right-click-outline$$
