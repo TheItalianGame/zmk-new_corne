@@ -224,7 +224,7 @@ layers:
   - F6
   - F11
   - PRINTSCREEN
-  - SCROLLLOCK
+  - $$mdi:keyboard-tab$$
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - $$mdi:progress-download$$
   - RGB OFF
