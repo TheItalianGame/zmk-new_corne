@@ -162,7 +162,7 @@ layers:
   - $
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '~'
+  - '!'
   - '*'
   - {t: /, s: '?'}
   - {t: '=', s: +}
