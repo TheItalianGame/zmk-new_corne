@@ -159,22 +159,22 @@ layers:
   - '{'
   - '}'
   - $
-  - )
+  - $
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '~'
+  - '*'
+  - {t: /, s: '?'}
+  - {t: '=', s: +}
   - '&'
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:arrow-right-bold$$
-  - {t: '-', s: _}
-  - {t: '=', s: +}
-  - {t: '[', s: '{'}
+  - '#'
+  - (
+  - )
   - {t: ']', s: '}'}
-  - {t: \, s: '|'}
+  - '!'
   - {t: '`', s: '~'}
   - {t: '$$mdi:transfer$$', type: trans}
   - '~'
@@ -184,9 +184,9 @@ layers:
   - '%'
   - $$mdi:keyboard-space$$
   - $$mdi:arrow-down-bold$$
+  - '@'
+  - ':'
   - _
-  - +
-  - '{'
   - '}'
   - '|'
   - '~'
