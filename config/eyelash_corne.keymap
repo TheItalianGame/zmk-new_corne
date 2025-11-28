@@ -147,10 +147,10 @@
         symbol_layer {
             display-name = "SYMBOL";
             bindings = <
-&trans  &kp GRAVE  &kp LT    &kp GT    &kp MINUS  &kp PIPE                          &kp UP                &kp CARET  &kp LBRC   &kp RBRC  &kp DLLR  &kp RPAR  &kp BSPC
-&trans  &trans     &trans    &trans    &trans     &kp AMPS                &kp LEFT  &kp ENTER  &kp RIGHT  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
-&trans  &kp TILDE  &kp PLUS  &kp LBKT  &kp RBKT   &kp PRCNT  &kp SPACE              &kp DOWN              &kp UNDER  &kp PLUS   &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE
-                             &trans    &trans     &kp SPACE                                               &kp RET    &trans     &trans
+&trans  &kp GRAVE  &kp LT    &kp GT     &kp MINUS  &kp PIPE                          &kp UP                &kp CARET  &kp LBRC              &kp RBRC               &kp DLLR  &kp DOLLAR  &kp BSPC
+&trans  &kp TILDE  &kp STAR  &kp SLASH  &kp EQUAL  &kp AMPS                &kp LEFT  &kp ENTER  &kp RIGHT  &kp POUND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RBKT  &kp EXCL    &kp GRAVE
+&trans  &kp TILDE  &kp PLUS  &kp LBKT   &kp RBKT   &kp PRCNT  &kp SPACE              &kp DOWN              &kp AT     &kp COLON             &kp UNDERSCORE         &kp RBRC  &kp PIPE    &kp TILDE
+                             &trans     &trans     &kp SPACE                                               &kp RET    &trans                &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
