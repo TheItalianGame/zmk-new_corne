@@ -147,9 +147,9 @@
         symbol_layer {
             display-name = "SYMBOL";
             bindings = <
-&trans  &kp GRAVE  &kp LT    &kp GT     &kp MINUS  &kp PIPE                          &kp UP                &kp CARET  &kp LBRC              &kp RBRC               &kp DLLR  &kp DOLLAR  &kp BSPC
-&trans  &kp EXCL   &kp STAR  &kp SLASH  &kp EQUAL  &kp AMPS                &kp LEFT  &kp ENTER  &kp RIGHT  &kp POUND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RBKT  &kp EXCL    &kp GRAVE
-&trans  &kp TILDE  &kp PLUS  &kp LBKT   &kp RBKT   &kp PRCNT  &kp SPACE              &kp DOWN              &kp AT     &kp COLON             &kp UNDERSCORE         &kp RBRC  &kp PIPE    &kp TILDE
+&trans  &kp GRAVE  &kp LT    &kp GT     &kp MINUS  &kp PIPE                          &kp UP                &kp CARET  &kp LBRC              &kp RBRC               &kp DLLR  &kp DOLLAR     &kp BSPC
+&trans  &kp EXCL   &kp STAR  &kp SLASH  &kp EQUAL  &kp AMPS                &kp LEFT  &kp ENTER  &kp RIGHT  &kp POUND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RBKT  &kp BACKSLASH  &kp GRAVE
+&trans  &kp TILDE  &kp PLUS  &kp LBKT   &kp RBKT   &kp PRCNT  &kp SPACE              &kp DOWN              &kp AT     &kp COLON             &kp UNDERSCORE         &kp RBRC  &kp PIPE       &kp TILDE
                              &trans     &trans     &kp SPACE                                               &kp RET    &trans                &trans
             >;
 
