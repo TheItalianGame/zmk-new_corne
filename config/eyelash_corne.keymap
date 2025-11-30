@@ -87,6 +87,11 @@
             bindings = <&mo 4>;
             key-positions = <45 46>;
         };
+
+        LEFT_SHIFTLCTRL {
+            bindings = <&kp LC(LSHIFT)>;
+            key-positions = <43 44>;
+        };
     };
 
     keymap {
