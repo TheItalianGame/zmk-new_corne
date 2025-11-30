@@ -250,3 +250,5 @@ combos:
   k: '&soft_off'
 - p: [45, 46]
   k: FN
+- p: [43, 44]
+  k: Ctl+$$mdi:apple-keyboard-shift$$

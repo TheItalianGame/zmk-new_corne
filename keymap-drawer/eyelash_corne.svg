@@ -562,6 +562,10 @@ rect.held, rect.combo.held {
 <a href="#FN">
 <text x="663" y="217" class="combo tap layer-activator">FN</text>
 </a></g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="303" y="204" width="28" height="26" class="combo"/>
+<use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="308" y="208" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-shift"/>
+</g>
 </g>
 </g>
 <g transform="translate(40, 318)" class="layer-MEDIA">
@@ -822,6 +826,10 @@ rect.held, rect.combo.held {
 <a href="#FN">
 <text x="663" y="217" class="combo tap layer-activator">FN</text>
 </a></g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="303" y="204" width="28" height="26" class="combo"/>
+<use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="308" y="208" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-shift"/>
+</g>
 </g>
 </g>
 <g transform="translate(40, 637)" class="layer-NUMBERS">
@@ -1086,6 +1094,10 @@ rect.held, rect.combo.held {
 <a href="#FN">
 <text x="663" y="217" class="combo tap layer-activator">FN</text>
 </a></g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="303" y="204" width="28" height="26" class="combo"/>
+<use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="308" y="208" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-shift"/>
+</g>
 </g>
 </g>
 <g transform="translate(40, 955)" class="layer-SYMBOL">
@@ -1349,6 +1361,10 @@ rect.held, rect.combo.held {
 <a href="#FN">
 <text x="663" y="217" class="combo tap layer-activator">FN</text>
 </a></g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="303" y="204" width="28" height="26" class="combo"/>
+<use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="308" y="208" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-shift"/>
+</g>
 </g>
 </g>
 <g transform="translate(40, 1274)" class="layer-FN">
@@ -1634,6 +1650,10 @@ rect.held, rect.combo.held {
 <a href="#FN">
 <text x="663" y="217" class="combo tap layer-activator">FN</text>
 </a></g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="303" y="204" width="28" height="26" class="combo"/>
+<use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="308" y="208" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-shift"/>
+</g>
 </g>
 </g>
 </svg>
