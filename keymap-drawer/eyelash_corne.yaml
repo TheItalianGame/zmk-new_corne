@@ -64,7 +64,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:volume-off$$
+  - Gui+AltGr+K
   - PRINTSCREEN
   - {t: '$$mdi:transfer$$', type: trans}
   - PG UP
