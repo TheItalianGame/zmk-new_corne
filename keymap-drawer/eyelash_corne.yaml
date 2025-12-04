@@ -252,3 +252,9 @@ combos:
   k: FN
 - p: [43, 44]
   k: Ctl+$$mdi:apple-keyboard-shift$$
+- p: [17, 16]
+  k: $$mdi:apple-keyboard-shift$$
+- p: [23, 24]
+  k: $$mdi:apple-keyboard-shift$$
+- p: [3, 4]
+  k: {t: '$$mdi:keyboard-tab$$', s: '$$mdi:keyboard-esc$$'}
