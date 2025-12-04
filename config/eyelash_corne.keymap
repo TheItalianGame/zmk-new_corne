@@ -73,7 +73,7 @@
             label = "LT1_BSPC_RGB";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <100>;
+            tapping-term-ms = <160>;
             quick-tap-ms = <0>;
             bindings = <&mo_media_rgb>, <&kp>;
         };
@@ -83,7 +83,7 @@
             label = "LT2_ENTER_RGB";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <100>;
+            tapping-term-ms = <160>;
             quick-tap-ms = <0>;
             bindings = <&mo_numbers_rgb>, <&kp>;
         };
@@ -93,7 +93,7 @@
             label = "LT3_SPACE_RGB";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <100>;
+            tapping-term-ms = <160>;
             quick-tap-ms = <0>;
             bindings = <&mo_symbol_rgb>, <&kp>;
         };
