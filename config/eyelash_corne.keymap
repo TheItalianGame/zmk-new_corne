@@ -98,6 +98,14 @@
             quick-tap-ms = <0>;
             bindings = <&mo_symbol_rgb>, <&kp>;
         };
+
+        SHIFTCAPS: SHIFTCAPS {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SHIFTCAPS";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LSHIFT>, <&kp CAPS>;
+        };
     };
 
     /* Layer + underglow color macros, using the official pattern:
@@ -255,10 +263,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&tabesc         &kp Q  &kp W  &kp E         &kp R         &kp T                             &kp UP                &kp Y                   &kp U                   &kp I                 &kp O    &kp P     &kp DEL
-&esc_tab        &atab  &kp S  &kp D         &kp F         &kp G                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp H                   &kp J                   &kp K                 &kp L    &kp SEMI  &kp SQT
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C         &kp V         &kp B      &kp SPACE              &kp DOWN              &kp N                   &kp M                   &kp COMMA             &kp DOT  &kp FSLH  &kp TAB
-                              &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL                                               &lt2_enter_rgb 0 ENTER  &lt3_space_rgb 0 SPACE  &lt1_bspc_rgb 0 BSPC
+&tabesc     &kp Q  &kp W  &kp E         &kp R         &kp T                             &kp UP                &kp Y                   &kp U                   &kp I                 &kp O    &kp P     &kp DEL
+&esc_tab    &atab  &kp S  &kp D         &kp F         &kp G                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp H                   &kp J                   &kp K                 &kp L    &kp SEMI  &kp SQT
+&SHIFTCAPS  &kp Z  &kp X  &kp C         &kp V         &kp B      &kp SPACE              &kp DOWN              &kp N                   &kp M                   &kp COMMA             &kp DOT  &kp FSLH  &kp CAPSLOCK
+                          &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL                                               &lt2_enter_rgb 0 ENTER  &lt3_space_rgb 0 SPACE  &lt1_bspc_rgb 0 BSPC
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
