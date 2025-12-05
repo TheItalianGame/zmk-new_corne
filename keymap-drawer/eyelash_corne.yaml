@@ -256,5 +256,5 @@ combos:
   k: $$mdi:apple-keyboard-shift$$
 - p: [23, 24]
   k: $$mdi:apple-keyboard-shift$$
-- p: [3, 4]
+- p: [17, 18]
   k: {t: '$$mdi:keyboard-tab$$', s: '$$mdi:keyboard-esc$$'}
