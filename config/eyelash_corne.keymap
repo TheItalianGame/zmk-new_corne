@@ -83,6 +83,7 @@
             quick-tap-ms = <90>;
             require-prior-idle-ms = <100>;
             retro-tap;
+            hold-while-undecided;
             bindings = <&mo_media_rgb>, <&kp>;
         };
 
@@ -95,6 +96,7 @@
             quick-tap-ms = <90>;
             require-prior-idle-ms = <100>;
             retro-tap;
+            hold-while-undecided;
             bindings = <&mo_numbers_rgb>, <&kp>;
         };
 
@@ -103,6 +105,7 @@
             label = "LT3_SPACE_RGB";
             #binding-cells = <2>;
             flavor = "tap-preferred";
+            hold-while-undecided;
             tapping-term-ms = <100>;
             quick-tap-ms = <90>;
             require-prior-idle-ms = <100>;
