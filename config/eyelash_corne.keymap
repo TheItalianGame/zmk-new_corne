@@ -140,12 +140,12 @@
                 <&macro_press>,
                 <&mo 1>,
                 <&macro_tap>,
-                <&rgb_ug RGB_COLOR_HSB(120,100,100)>,
+                <&rgb_ug RGB_COLOR_HSB(120,100,10)>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
                 <&mo 1>,
                 <&macro_tap>,
-                <&rgb_ug RGB_COLOR_HSB(0,0,100)>;
+                <&rgb_ug RGB_COLOR_HSB(0,0,10)>;
 
             /* base: white */
         };
@@ -162,12 +162,12 @@
                 <&macro_press>,
                 <&mo 2>,
                 <&macro_tap>,
-                <&rgb_ug RGB_COLOR_HSB(210,100,100)>,
+                <&rgb_ug RGB_COLOR_HSB(210,100,10)>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
                 <&mo 2>,
                 <&macro_tap>,
-                <&rgb_ug RGB_COLOR_HSB(0,0,100)>;
+                <&rgb_ug RGB_COLOR_HSB(0,0,10)>;
 
             /* base: white */
         };
@@ -184,12 +184,12 @@
                 <&macro_press>,
                 <&mo 3>,
                 <&macro_tap>,
-                <&rgb_ug RGB_COLOR_HSB(0,100,100)>,
+                <&rgb_ug RGB_COLOR_HSB(0,100,10)>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
                 <&mo 3>,
                 <&macro_tap>,
-                <&rgb_ug RGB_COLOR_HSB(0,0,100)>;
+                <&rgb_ug RGB_COLOR_HSB(0,0,10)>;
 
             /* base: white */
         };
@@ -206,12 +206,12 @@
                 <&macro_press>,
                 <&mo 4>,
                 <&macro_tap>,
-                <&rgb_ug RGB_COLOR_HSB(30,100,100)>,
+                <&rgb_ug RGB_COLOR_HSB(30,100,10)>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
                 <&mo 4>,
                 <&macro_tap>,
-                <&rgb_ug RGB_COLOR_HSB(0,0,100)>;
+                <&rgb_ug RGB_COLOR_HSB(0,0,10)>;
 
             /* base: white */
         };
