@@ -28,7 +28,7 @@
 
 &soft_off { hold-time-ms = <2000>; };
 
-/ {
+ / {
     behaviors {
         esc_tab: esc_tab {
             compatible = "zmk,behavior-mod-morph";
@@ -63,6 +63,11 @@
         /* Custom hold-tap behaviors that use layer+RGB macros on hold,
          * and keep your normal tap behavior.
          *
+         * Updated:
+         * - Lowered tapping-term to 100ms
+         * - Added retro-tap
+         * - Added require-prior-idle + adjusted quick-tap
+         *
          * Usage:
          *   &lt2_enter_rgb 0 ENTER  -> hold: Numbers+blue, tap: ENTER
          *   &lt3_space_rgb 0 SPACE  -> hold: Symbol+red,   tap: SPACE
@@ -74,8 +79,10 @@
             label = "LT1_BSPC_RGB";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <160>;
-            quick-tap-ms = <0>;
+            tapping-term-ms = <100>;
+            quick-tap-ms = <90>;
+            require-prior-idle-ms = <100>;
+            retro-tap;
             bindings = <&mo_media_rgb>, <&kp>;
         };
 
@@ -84,8 +91,10 @@
             label = "LT2_ENTER_RGB";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <160>;
-            quick-tap-ms = <0>;
+            tapping-term-ms = <100>;
+            quick-tap-ms = <90>;
+            require-prior-idle-ms = <100>;
+            retro-tap;
             bindings = <&mo_numbers_rgb>, <&kp>;
         };
 
@@ -94,8 +103,10 @@
             label = "LT3_SPACE_RGB";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <160>;
-            quick-tap-ms = <0>;
+            tapping-term-ms = <100>;
+            quick-tap-ms = <90>;
+            require-prior-idle-ms = <100>;
+            retro-tap;
             bindings = <&mo_symbol_rgb>, <&kp>;
         };
 
