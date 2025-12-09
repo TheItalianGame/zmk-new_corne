@@ -28,7 +28,7 @@
 
 &soft_off { hold-time-ms = <2000>; };
 
- / {
+/ {
     behaviors {
         esc_tab: esc_tab {
             compatible = "zmk,behavior-mod-morph";
@@ -283,7 +283,7 @@
                           &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL                                               &lt2_enter_rgb 0 ENTER  &lt3_space_rgb 0 SPACE  &lt1_bspc_rgb 0 BSPC
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&rgb_encoder>;
         };
 
         /*******************
