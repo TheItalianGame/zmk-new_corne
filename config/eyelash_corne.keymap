@@ -120,6 +120,13 @@
             tapping-term-ms = <200>;
             bindings = <&kp LSHIFT>, <&kp CAPS>;
         };
+
+        NSU: NSU {
+            compatible = "zmk,behavior-tap-dance";
+            label = "NSU";
+            #binding-cells = <0>;
+            bindings = <&kp U>, <&kp LS(LA(U))>;
+        };
     };
 
     /* Layer + underglow color macros, using the official pattern:
