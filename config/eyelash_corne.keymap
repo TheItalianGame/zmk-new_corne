@@ -285,7 +285,7 @@
             display-name = "QWERTY";
             bindings = <
 &tabesc     &kp Q  &kp W  &kp E         &kp R         &kp T                             &kp UP                &kp Y                   &NSU                    &kp I                 &kp O    &kp P     &kp DEL
-&esc_tab    &atab  &kp S  &kp D         &kp F         &kp G                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp H                   &kp J                   &kp K                 &kp L    &kp SEMI  &kp SQT
+&esc_tab    &atab  &kp S  &kp D         &kp F         &kp G                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp H                   &kp J                   &kp K                 &kp L    &lt 5 SEMI  &kp SQT
 &SHIFTCAPS  &kp Z  &kp X  &kp C         &kp V         &kp B      &kp SPACE              &kp DOWN              &kp N                   &kp M                   &kp COMMA             &kp DOT  &kp FSLH  &kp CAPSLOCK
                           &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL                                               &lt2_enter_rgb 0 ENTER  &lt3_space_rgb 0 SPACE  &lt1_bspc_rgb 0 BSPC
             >;
@@ -352,6 +352,22 @@
 &none           &out OUT_USB    &out OUT_BLE     &mkp RCLK       &mkp MB4         &mkp MB5                            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp F4  &kp F5  &kp F6  &kp F11  &kp PRINTSCREEN  &kp TAB
 &sys_reset      &bootloader     &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI                    &mmv MOVE_DOWN                   &kp F1  &kp F2  &kp F3  &kp F12  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD
                                                  &trans          &trans           &trans                                                                               &trans  &trans  &trans
+            >;
+
+            sensor-bindings = <&scroll_encoder>;
+        };
+
+        /*****************************
+         *  LAYER 5: BSPC OVERRIDE   *
+         *****************************/
+
+        bspc_override_layer {
+            display-name = "BSPC_OVRD";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                         &trans                &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans               &trans    &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                 &trans                &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans                                               &trans  &trans  &kp BACKSPACE
             >;
 
             sensor-bindings = <&scroll_encoder>;
