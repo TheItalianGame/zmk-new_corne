@@ -47,8 +47,8 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
   - {t: '$$mdi:keyboard-return$$', h: '&mo_numbers_rgb'}
-  - {t: '$$mdi:keyboard-space$$', h: '&mo_symbol_rgb'}
-  - {t: '$$mdi:backspace$$', h: '&mo_media_rgb'}
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:backspace$$', h: '&mo_symbol_rgb'}
   MEDIA:
   - {t: '$$mdi:transfer$$', type: trans}
   - REWIND
@@ -192,9 +192,9 @@ layers:
   - '~'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:keyboard-space$$', type: held}
+  - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   FN:
   - '&studio_unlock'
@@ -308,6 +308,6 @@ combos:
 - p: [17, 18]
   k: {t: '$$mdi:keyboard-tab$$', s: '$$mdi:keyboard-esc$$'}
 - p: [44, 46]
-  k: SYMBOL
+  k: {t: 'Ctl+$$mdi:keyboard-space$$', h: '&mo_ctrlshift_symbol'}
 - p: [22, 23]
   k: MEDIA
