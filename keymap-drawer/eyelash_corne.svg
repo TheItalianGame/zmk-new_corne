@@ -1,8 +1,5 @@
 <svg width="1060" height="1967" viewBox="0 0 1060 1967" class="keymap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>/* start glyphs */
-<svg id="mdi:apple-keyboard-caps">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-apple-keyboard-caps" viewBox="0 0 24 24"><path d="M15,14V8H17.17L12,2.83L6.83,8H9V14H15M12,0L22,10H17V16H7V10H2L12,0M7,18H17V24H7V18M15,20H9V22H15V20Z" /></svg>
-</svg>
 <svg id="mdi:apple-keyboard-command">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-apple-keyboard-command" viewBox="0 0 24 24"><path d="M6,2A4,4 0 0,1 10,6V8H14V6A4,4 0 0,1 18,2A4,4 0 0,1 22,6A4,4 0 0,1 18,10H16V14H18A4,4 0 0,1 22,18A4,4 0 0,1 18,22A4,4 0 0,1 14,18V16H10V18A4,4 0 0,1 6,22A4,4 0 0,1 2,18A4,4 0 0,1 6,14H8V10H6A4,4 0 0,1 2,6A4,4 0 0,1 6,2M16,18A2,2 0 0,0 18,20A2,2 0 0,0 20,18A2,2 0 0,0 18,16H16V18M14,10H10V14H14V10M6,16A2,2 0 0,0 4,18A2,2 0 0,0 6,20A2,2 0 0,0 8,18V16H6M8,6A2,2 0 0,0 6,4A2,2 0 0,0 4,6A2,2 0 0,0 6,8H8V6M18,8A2,2 0 0,0 20,6A2,2 0 0,0 18,4A2,2 0 0,0 16,6V8H18Z" /></svg>
 </svg>
@@ -522,7 +519,7 @@ rect.held, rect.combo.held {
 <g transform="translate(952, 161)" class="key keypos-41">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<use href="#mdi:apple-keyboard-caps" xlink:href="#mdi:apple-keyboard-caps" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:apple-keyboard-caps"/>
+<use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:apple-keyboard-shift"/>
 </g>
 <g transform="translate(224, 203)" class="key keypos-42">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -583,6 +580,18 @@ rect.held, rect.combo.held {
 <use href="#mdi:keyboard-tab" xlink:href="#mdi:keyboard-tab" x="271" y="85" height="18" width="18.0" class="combo tap glyph mdi:keyboard-tab"/>
 <use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="272" y="83" height="15" width="15.0" class="combo shifted glyph mdi:keyboard-esc"/>
 </g>
+<g class="combo combopos-6">
+<path d="M521,217 l-155,7" class="combo"/>
+<path d="M521,217 l155,-7" class="combo"/>
+<rect rx="6" ry="6" x="507" y="204" width="28" height="26" class="combo"/>
+<a href="#SYMBOL">
+<text x="521" y="217" class="combo tap layer-activator">SYMBOL</text>
+</a></g>
+<g class="combo combopos-7">
+<rect rx="6" ry="6" x="686" y="81" width="28" height="26" class="combo"/>
+<a href="#MEDIA">
+<text x="700" y="94" class="combo tap layer-activator">MEDIA</text>
+</a></g>
 </g>
 </g>
 <g transform="translate(40, 318)" class="layer-MEDIA">
@@ -704,15 +713,13 @@ rect.held, rect.combo.held {
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <use href="#mdi:arrow-right-bold" xlink:href="#mdi:arrow-right-bold" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:arrow-right-bold"/>
 </g>
-<g transform="translate(672, 97)" class="key trans keypos-22">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key trans"/>
-<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-13" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
+<g transform="translate(672, 97)" class="key held keypos-22">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key held"/>
 </g>
-<g transform="translate(728, 91)" class="key trans keypos-23">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key trans"/>
-<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-13" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
+<g transform="translate(728, 91)" class="key held keypos-23">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key held"/>
 </g>
 <g transform="translate(784, 84)" class="key trans keypos-24">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
@@ -862,6 +869,18 @@ rect.held, rect.combo.held {
 <use href="#mdi:keyboard-tab" xlink:href="#mdi:keyboard-tab" x="271" y="85" height="18" width="18.0" class="combo tap glyph mdi:keyboard-tab"/>
 <use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="272" y="83" height="15" width="15.0" class="combo shifted glyph mdi:keyboard-esc"/>
 </g>
+<g class="combo combopos-6">
+<path d="M521,217 l-155,7" class="combo"/>
+<path d="M521,217 l155,-7" class="combo"/>
+<rect rx="6" ry="6" x="507" y="204" width="28" height="26" class="combo"/>
+<a href="#SYMBOL">
+<text x="521" y="217" class="combo tap layer-activator">SYMBOL</text>
+</a></g>
+<g class="combo combopos-7">
+<rect rx="6" ry="6" x="686" y="81" width="28" height="26" class="combo"/>
+<a href="#MEDIA">
+<text x="700" y="94" class="combo tap layer-activator">MEDIA</text>
+</a></g>
 </g>
 </g>
 <g transform="translate(40, 637)" class="layer-NUMBERS">
@@ -1143,6 +1162,18 @@ rect.held, rect.combo.held {
 <use href="#mdi:keyboard-tab" xlink:href="#mdi:keyboard-tab" x="271" y="85" height="18" width="18.0" class="combo tap glyph mdi:keyboard-tab"/>
 <use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="272" y="83" height="15" width="15.0" class="combo shifted glyph mdi:keyboard-esc"/>
 </g>
+<g class="combo combopos-6">
+<path d="M521,217 l-155,7" class="combo"/>
+<path d="M521,217 l155,-7" class="combo"/>
+<rect rx="6" ry="6" x="507" y="204" width="28" height="26" class="combo"/>
+<a href="#SYMBOL">
+<text x="521" y="217" class="combo tap layer-activator">SYMBOL</text>
+</a></g>
+<g class="combo combopos-7">
+<rect rx="6" ry="6" x="686" y="81" width="28" height="26" class="combo"/>
+<a href="#MEDIA">
+<text x="700" y="94" class="combo tap layer-activator">MEDIA</text>
+</a></g>
 </g>
 </g>
 <g transform="translate(40, 955)" class="layer-SYMBOL">
@@ -1377,20 +1408,19 @@ rect.held, rect.combo.held {
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key trans"/>
 <use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-13" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
 </g>
-<g transform="translate(348, 226) rotate(24.0)" class="key keypos-44">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:keyboard-space"/>
+<g transform="translate(348, 226) rotate(24.0)" class="key held keypos-44">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key held"/>
+<use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="-9" y="-13" height="18" width="18.0" class="key held tap glyph mdi:keyboard-space"/>
 </g>
 <g transform="translate(632, 224) rotate(-24.0)" class="key enter keypos-45">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key enter side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key enter"/>
 <use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="-9" y="-13" height="18" width="18.0" class="key enter tap glyph mdi:keyboard-return"/>
 </g>
-<g transform="translate(695, 209) rotate(-12.0)" class="key trans keypos-46">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key trans"/>
-<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-13" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
+<g transform="translate(695, 209) rotate(-12.0)" class="key held keypos-46">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key held"/>
 </g>
 <g transform="translate(756, 203)" class="key trans keypos-47">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
@@ -1423,6 +1453,18 @@ rect.held, rect.combo.held {
 <use href="#mdi:keyboard-tab" xlink:href="#mdi:keyboard-tab" x="271" y="85" height="18" width="18.0" class="combo tap glyph mdi:keyboard-tab"/>
 <use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="272" y="83" height="15" width="15.0" class="combo shifted glyph mdi:keyboard-esc"/>
 </g>
+<g class="combo combopos-6">
+<path d="M521,217 l-155,7" class="combo"/>
+<path d="M521,217 l155,-7" class="combo"/>
+<rect rx="6" ry="6" x="507" y="204" width="28" height="26" class="combo"/>
+<a href="#SYMBOL">
+<text x="521" y="217" class="combo tap layer-activator">SYMBOL</text>
+</a></g>
+<g class="combo combopos-7">
+<rect rx="6" ry="6" x="686" y="81" width="28" height="26" class="combo"/>
+<a href="#MEDIA">
+<text x="700" y="94" class="combo tap layer-activator">MEDIA</text>
+</a></g>
 </g>
 </g>
 <g transform="translate(40, 1274)" class="layer-FN">
@@ -1726,6 +1768,18 @@ rect.held, rect.combo.held {
 <use href="#mdi:keyboard-tab" xlink:href="#mdi:keyboard-tab" x="271" y="85" height="18" width="18.0" class="combo tap glyph mdi:keyboard-tab"/>
 <use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="272" y="83" height="15" width="15.0" class="combo shifted glyph mdi:keyboard-esc"/>
 </g>
+<g class="combo combopos-6">
+<path d="M521,217 l-155,7" class="combo"/>
+<path d="M521,217 l155,-7" class="combo"/>
+<rect rx="6" ry="6" x="507" y="204" width="28" height="26" class="combo"/>
+<a href="#SYMBOL">
+<text x="521" y="217" class="combo tap layer-activator">SYMBOL</text>
+</a></g>
+<g class="combo combopos-7">
+<rect rx="6" ry="6" x="686" y="81" width="28" height="26" class="combo"/>
+<a href="#MEDIA">
+<text x="700" y="94" class="combo tap layer-activator">MEDIA</text>
+</a></g>
 </g>
 </g>
 <g transform="translate(40, 1592)" class="layer-BSPC_OVRD">
@@ -1996,6 +2050,18 @@ rect.held, rect.combo.held {
 <use href="#mdi:keyboard-tab" xlink:href="#mdi:keyboard-tab" x="271" y="85" height="18" width="18.0" class="combo tap glyph mdi:keyboard-tab"/>
 <use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="272" y="83" height="15" width="15.0" class="combo shifted glyph mdi:keyboard-esc"/>
 </g>
+<g class="combo combopos-6">
+<path d="M521,217 l-155,7" class="combo"/>
+<path d="M521,217 l155,-7" class="combo"/>
+<rect rx="6" ry="6" x="507" y="204" width="28" height="26" class="combo"/>
+<a href="#SYMBOL">
+<text x="521" y="217" class="combo tap layer-activator">SYMBOL</text>
+</a></g>
+<g class="combo combopos-7">
+<rect rx="6" ry="6" x="686" y="81" width="28" height="26" class="combo"/>
+<a href="#MEDIA">
+<text x="700" y="94" class="combo tap layer-activator">MEDIA</text>
+</a></g>
 </g>
 </g>
 </svg>
