@@ -254,6 +254,16 @@
             bindings = <&tabesc>;
             key-positions = <17 18>;
         };
+
+        ctrl_space_symbol {
+            bindings = <&mo 3>;
+            key-positions = <44 46>;
+        };
+
+        jk_media {
+            bindings = <&mo 1>;
+            key-positions = <22 23>;
+        };
     };
 
     keymap {
@@ -264,7 +274,7 @@
             bindings = <
 &tabesc     &kp Q  &kp W  &kp E         &kp R         &kp T                             &kp UP                &kp Y                   &NSU                    &kp I                 &kp O    &kp P       &kp DEL
 &esc_tab    &atab  &kp S  &kp D         &kp F         &kp G                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp H                   &kp J                   &kp K                 &kp L    &lt 5 SEMI  &kp SQT
-&SHIFTCAPS  &kp Z  &kp X  &kp C         &kp V         &kp B      &kp SPACE              &kp DOWN              &kp N                   &kp M                   &kp COMMA             &kp DOT  &kp FSLH    &kp CAPSLOCK
+&SHIFTCAPS  &kp Z  &kp X  &kp C         &kp V         &kp B      &kp SPACE              &kp DOWN              &kp N                   &kp M                   &kp COMMA             &kp DOT  &kp FSLH    &kp RSHIFT
                           &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL                                               &lt2_enter_rgb 0 ENTER  &lt3_space_rgb 0 SPACE  &lt1_bspc_rgb 0 BSPC
             >;
 
