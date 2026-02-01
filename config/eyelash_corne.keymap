@@ -121,6 +121,22 @@
             bindings = <&mo_numbers_rgb>, <&kp>;
         };
 
+        td_enter_numlock: td_enter_numlock {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_ENTER_NUMLOCK";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&lt2_enter_rgb 0 ENTER>, <&tog_numbers_rgb>;
+        };
+
+        td_enter_numunlock: td_enter_numunlock {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_ENTER_NUMUNLOCK";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp ENTER>, <&untog_numbers_rgb>;
+        };
+
         lt3_space_rgb: lt3_space_rgb {
             compatible = "zmk,behavior-hold-tap";
             label = "LT3_SPACE_RGB";
@@ -192,6 +208,24 @@
                 <&mo 2>,
                 <&macro_tap>,
                 <&rgb_ug RGB_COLOR_HSB(0,0,10)>;
+        };
+
+        tog_numbers_rgb: tog_numbers_rgb {
+            compatible = "zmk,behavior-macro";
+            label = "TOG_NUMBERS_RGB";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings = <&tog 2>, <&rgb_ug RGB_COLOR_HSB(210,100,10)>;
+        };
+
+        untog_numbers_rgb: untog_numbers_rgb {
+            compatible = "zmk,behavior-macro";
+            label = "UNTOG_NUMBERS_RGB";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings = <&tog 2>, <&rgb_ug RGB_COLOR_HSB(0,0,10)>;
         };
 
         mo_symbol_rgb: mo_symbol_rgb {
@@ -316,7 +350,7 @@
 
         jk_media {
             bindings = <&mo 1>;
-            key-positions = <22 23>;
+            key-positions = <21 22>;
         };
     };
 
@@ -329,7 +363,7 @@
 &tabesc     &kp Q  &kp W  &kp E         &kp R         &kp T                             &kp UP                &kp Y                   &NSU                    &kp I                 &kp O    &kp P       &kp DEL
 &esc_tab    &atab  &kp S  &kp D         &kp F         &kp G                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp H                   &kp J                   &kp K                 &kp L    &lt 5 SEMI  &kp SQT
 &SHIFTCAPS  &kp Z  &kp X  &kp C         &kp V         &kp B      &kp SPACE              &kp DOWN              &kp N                   &kp M                   &kp COMMA             &kp DOT  &kp FSLH    &kp RSHIFT
-                          &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL                                               &lt2_enter_rgb 0 ENTER  &kp SPACE  &lt_bspc_symbol_rgb 0 BSPC
+                          &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL                                               &td_enter_numlock  &kp SPACE  &lt_bspc_symbol_rgb 0 BSPC
             >;
 
             sensor-bindings = <&zoom>;
@@ -353,7 +387,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans                         &kp UP                &kp N7  &kp N8  &kp N9  &kp N0  &trans  &kp BSPC
 &trans  &trans  &trans  &trans  &trans  &trans               &kp LEFT  &kp ENTER  &kp RIGHT  &kp N4  &kp N5  &kp N6  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &kp SPACE              &kp DOWN              &kp N1  &kp N2  &kp N3  &trans  &trans  &trans
-                        &trans  &trans  &trans                                               &trans  &trans  &trans
+                        &trans  &trans  &trans                                               &td_enter_numunlock  &trans  &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
