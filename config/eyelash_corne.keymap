@@ -86,6 +86,28 @@
             bindings = <&mo_media_rgb>, <&kp>;
         };
 
+        lt_bspc_symbol_rgb: lt_bspc_symbol_rgb {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT_BSPC_SYMBOL_RGB";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <100>;
+            quick-tap-ms = <90>;
+            require-prior-idle-ms = <100>;
+            retro-tap;
+            hold-while-undecided;
+            bindings = <&mo_symbol_rgb>, <&kp>;
+        };
+
+        ht_ctrlspace_symbol: ht_ctrlspace_symbol {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT_CTRLSPACE_SYMBOL";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <150>;
+            bindings = <&mo_ctrlshift_symbol>, <&kp>;
+        };
+
         lt2_enter_rgb: lt2_enter_rgb {
             compatible = "zmk,behavior-hold-tap";
             label = "LT2_ENTER_RGB";
@@ -207,6 +229,38 @@
                 <&macro_tap>,
                 <&rgb_ug RGB_COLOR_HSB(0,0,10)>;
         };
+
+        mo_symbol_shift: mo_symbol_shift {
+            compatible = "zmk,behavior-macro";
+            label = "MO_SYMBOL_SHIFT";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings =
+                <&macro_press>,
+                <&mo 3 &kp LSHIFT>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&mo 3 &kp LSHIFT>;
+        };
+
+        mo_ctrlshift_symbol: mo_ctrlshift_symbol {
+            compatible = "zmk,behavior-macro-one-param";
+            label = "MO_CTRLSHIFT_SYMBOL";
+            #binding-cells = <1>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp LSHIFT &mo 3>,
+                <&macro_tap>,
+                <&rgb_ug RGB_COLOR_HSB(300,100,10)>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp LCTRL &kp LSHIFT &mo 3>,
+                <&macro_tap>,
+                <&rgb_ug RGB_COLOR_HSB(0,0,10)>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -256,7 +310,7 @@
         };
 
         ctrl_space_symbol {
-            bindings = <&mo 3>;
+            bindings = <&ht_ctrlspace_symbol 0 LC(SPACE)>;
             key-positions = <44 46>;
         };
 
@@ -275,7 +329,7 @@
 &tabesc     &kp Q  &kp W  &kp E         &kp R         &kp T                             &kp UP                &kp Y                   &NSU                    &kp I                 &kp O    &kp P       &kp DEL
 &esc_tab    &atab  &kp S  &kp D         &kp F         &kp G                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp H                   &kp J                   &kp K                 &kp L    &lt 5 SEMI  &kp SQT
 &SHIFTCAPS  &kp Z  &kp X  &kp C         &kp V         &kp B      &kp SPACE              &kp DOWN              &kp N                   &kp M                   &kp COMMA             &kp DOT  &kp FSLH    &kp RSHIFT
-                          &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL                                               &lt2_enter_rgb 0 ENTER  &lt3_space_rgb 0 SPACE  &lt1_bspc_rgb 0 BSPC
+                          &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL                                               &lt2_enter_rgb 0 ENTER  &kp SPACE  &lt_bspc_symbol_rgb 0 BSPC
             >;
 
             sensor-bindings = <&zoom>;
